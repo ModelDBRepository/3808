@@ -57,7 +57,6 @@ BREAKPOINT {
  
 UNITSOFF
 INITIAL {
-	tadj = 3.0^((celsius-23.5)/10)
 	rates(v)
 	m = m_inf
 	h = h_inf
@@ -74,6 +73,7 @@ PROCEDURE states() {
 PROCEDURE rates(v) { LOCAL alpha, beta, q10, tinc
         TABLE m_inf, tau_m, h_inf, tau_h, n_inf, tau_n DEPEND dt, 
 	      celsius FROM -100 TO 100 WITH 200
+	tadj = 3.0^((celsius-23.5)/10)
 	:"m" sodium activation system
           alpha = .091 * vtrap(v+38,5)
           beta =  .062 * vtrap(-(v+38),5) 

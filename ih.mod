@@ -81,7 +81,7 @@ ASSIGNED {
 }
 
 BREAKPOINT { 
-	SOLVE states METHOD euler
+	SOLVE states METHOD cnexp
 	ih = ghbar * (s1+s2) * (f1+f2) * (v-eh)
 }
 

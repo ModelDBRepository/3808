@@ -26,3 +26,5 @@ currents, and sleep vs. waking in single neurons. Study questions are provided
 throughout. This ingeniously-designed program will benefit all undergraduate 
 students of neuroscience.
 
+20120109 cadyn.mod and ih.mod updated to use derivimplicit and cnexp.  See
+http://www.neuron.yale.edu/phpbb/viewtopic.php?f=28&t=592
